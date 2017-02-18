@@ -1,0 +1,28 @@
+{
+  "name": "projectk",
+  "version": "1.0.0",
+  "description": "creating package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-tet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sledx/projectK.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Kamil Slesinski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sledx/projectK/issues"
+  },
+  "homepage": "https://github.com/Sledx/projectK#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
