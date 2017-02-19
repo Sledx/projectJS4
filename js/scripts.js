@@ -1,17 +1,18 @@
 // plik scripts.js
 
-var name = prompt('Wpisz swoje imię');
 
-//wg zadania 8.3 komuntuje linie alert dowolnym type komentarza, zakładam, że o to chodzi :)
-alert('Witaj, ' + name);
-console.log('Witaj, ' + name);
+function getTriangleArea(a, h) {
+    if ((a <= 0) || (h <= 0)) {
+        console.log("W tym przypadku zadano nieprawidłowe dane");
+    } else {
+        console.log("W tym wywołaniu dane są prawidłowe"); // tego nie ma wg zadania, ale stwierdzilem ze zadam. Generalnie zadaniowo OK, ale ogolnie niepraktycznie bo jak deklarujemy nizej zmienne to zawsze nam sie teraz wykonuje instrukcja if, ale w sumie to moze i OK :) generalnie takie zadanie i wg mnie OK mam nadzieje, ważne że czaje :)
+    }   // tutaj dajemy przecinek czy tak zostawiamy? w sensie jak separujemy instrukcje w funkcji?
+    return (a * h / 2);
+}
 
-/* 
-nie czaje troche zadania, choc jest krotkie:
-1. W pliku scripts.js zakomentuj linię z poleceniem alert dowolnym typem komentarza.
-2. Wyślij zmiany na zdalne repozytorium.
-3. Dodaj jeszcze dwa inne komentarze.
-4. Stwórz nowe repozytorium i wyślij tam swój projekt. Pamiętaj o udostępnieniu go mentorowi na Githubie. Link do projektu wstaw poniżej.
-*/
+console.log(getTriangleArea(10,6));
 
-//dodaje jeszcze drugi komentarz i wysyłam dopiero na repozytorium, ale to z poprzedniego zadania bo rozni sie o te komentarze wiec chyban nie ma sensu zebym od początku robił całą strukturę i nowe repozytorium?
+var triangle1Area = getTriangleArea(10,15);
+var triangle1Area = getTriangleArea(-1,4);
+var triangle1Area = getTriangleArea(6,10);
+
